@@ -1,6 +1,5 @@
-# lista de chamada e lista de atendentes
 class Fila:
-    def _init_(self):
+    def __init__(self):
         self.lista = []
 
     def enqueue(self, elemento):
