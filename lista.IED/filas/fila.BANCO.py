@@ -11,7 +11,7 @@ class FilaDeBanco():
     def atender(self):
         if self.clientes:
             pessoa = self.clientes.pop(0)
-            print(f'O cliente {pessoa} foi atendido.')
+            print(f'O(a) cliente {pessoa} foi atendido(a).')
         else:
             print('A fila está vazia.')
 
@@ -33,6 +33,7 @@ while True:
     elif esc == '3':
         clientes.mostrar(pessoa)
     elif esc == '4':
+        print('Encerrando a fila.')
         break
     else:
         print('Essa opção não existe')
