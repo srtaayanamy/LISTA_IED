@@ -1,0 +1,1 @@
+# Implemente uma função que use uma pilha para verificar se uma expressão contém parênteses, colchetes e chaves abertos e fechados corretamente. Exemplo de entrada: {[()]}, saída esperada: True; entrada: {[(])}, saída esperada: False.

@@ -1,0 +1,1 @@
+# Implemente uma função recursiva que gere todas as permutações possíveis de uma string e as retorne em uma lista.

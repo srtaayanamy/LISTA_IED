@@ -1,0 +1,1 @@
+# Dada uma sequência inicial de números (1 a n) e uma sequência-alvo, verifique se a sequência-alvo pode ser alcançada através de uma série de operações de empilhar e desempilhar.

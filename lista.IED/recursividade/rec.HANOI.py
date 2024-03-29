@@ -1,0 +1,1 @@
+# Escreva uma função recursiva que resolva o problema das Torres de Hanói. A função deve imprimir os movimentos necessários para mover N discos do pino A para o pino C, usando o pino B como auxiliar.

@@ -1,0 +1,7 @@
+"Primeiro a chegar, primeiro a sair"
+
+# Enqueue: Adiciona um elemento ao final da fila
+# Dequeue: Remove o elemento do início da fila
+# Front: Retorna o primeiro elemento da fila sem remover
+# isEmpty: Verifica se a fila está vazia
+

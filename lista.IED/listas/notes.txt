@@ -1,0 +1,24 @@
+LISTA
+
+# append = adiciona no final
+# remove = remove
+# insert = bota no meio/ lugar que quiser com um indice [ insert(1, 'anna') ]
+# extend = adiciona elementos de uma lista a outra lista [ thislist.extend(tropical) ]
+# del = apaga no lugar que quiser com um indice { del elementos[4] }
+# pop (sem variavel antes) = apaga o ultimo item (mais ligado ao indice)
+# pop (com a variavel antes) = pega a informação de uma lista e joga numa variavel [ sonho = lista.pop(-1) ] {-1 = posição que tá o carro}
+# sort = ordena a lista (menor pro maior) | reverse = true (maior para o menor)
+
+REVERSÃO
+
+# list.reverse() = literalmente inverte a lista 
+
+INTERCALAR
+
+# insert = bota no meio/ lugar que quiser com um indice [ insert(1, 'anna') ]
+
+DUPLICATAS
+
+# set é uma estrutura que só pode ter valores unicos
+# primeiro você transforma a lista em um set, depois o set na lista de volta
+# no set a ordem não importa

@@ -1,0 +1,1 @@
+# Escreva uma função recursiva que calcule a soma de todos os elementos de uma lista.

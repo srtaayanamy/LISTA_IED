@@ -1,0 +1,1 @@
+# Modifique a estrutura de Pilha para que ela suporte uma operação adicional min(), que retorna o menor elemento presente na pilha em tempo constante.

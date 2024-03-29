@@ -1,0 +1,1 @@
+# Desenvolva uma função recursiva que gere todos os subconjuntos possíveis de um conjunto dado.

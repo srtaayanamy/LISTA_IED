@@ -1,0 +1,1 @@
+# Imagine um sistema de distribuição de chamadas para atendentes. Implemente uma função que, dadas duas filas (uma de chamadas e outra de atendentes), distribua as chamadas de forma equitativa, retornando a fila de chamadas não atendidas (se houver).

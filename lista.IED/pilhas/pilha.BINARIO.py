@@ -1,0 +1,1 @@
+# Utilize uma pilha para converter um número inteiro decimal para binário. Apresente o resultado como uma string.
