@@ -4,11 +4,11 @@ class FilaDeBanco():
     def __init__(self):
         self.clientes = []
     
-    def inserir(self, pessoa):
+    def enqueue(self, pessoa):
         self.clientes.append(pessoa)
         print('O cliente foi adicionado na fila.')
 
-    def atender(self):
+    def dequeue(self):
         if self.clientes:
             pessoa = self.clientes.pop(0)
             print(f'O(a) cliente {pessoa} foi atendido(a).')
@@ -27,9 +27,9 @@ while True:
     esc = input('O que deseja fazer?\n1-Inserir cliente;\n2-Atender Cliente;\n3-Mostrar a fila.\n4-Sair\n')
     if esc == '1':
         pessoa = input('Digite o cliente que deseja adicionar: ')
-        clientes.inserir(pessoa)
+        clientes.enqueue(pessoa)
     elif esc == '2':
-        clientes.atender()
+        clientes.dequeue()
     elif esc == '3':
         clientes.mostrar(pessoa)
     elif esc == '4':
