@@ -1,47 +1,55 @@
-# Crie uma classe Lista que implemente as seguintes operações básicas: inserção, remoção e busca de um elemento. Além disso, adicione um método para imprimir todos os elementos da lista.
+# Implementação de Lista: 
+'''Crie uma classe Lista que implemente as seguintes operações básicas: inserção, remoção e busca de um elemento. Além disso, adicione um método para imprimir todos os elementos da lista.'''
 
-class Lista():
+class Lista:
     def __init__(self):
-        self.elementos = []
+        self.list = []
 
-    def inserir(self, elemento):
-        self.elementos.append(elemento)
-        print('Item adicionado')
+    def inserir (self, item):
+        self.list.append(item)
+        print('ITEM ADICIONADO.')
 
-    def remover(self, elemento):
-        if elemento in self.elementos:
-          self.elementos.remove(elemento)
-        print('Item removido')
+    def remover (self, item):
+        if item in self.list:
+            self.list.remove(item)
+            print('ITEM REMOVIDO.')
+        else:
+            print('O ITEM NÃO FOI LOCALIZADO.') 
 
-    def busca(self, elemento):
-        if elemento in self.elementos:
+    def busca (self, item):
+        if item in self.list:
             return True
         else:
             return False
-
+        
     def mostrar(self):
-        for elemento in self.elementos:
-          print('-', elemento)
+        if self.list:
+            print(self.list)
 
-Lista = Lista()
+main = Lista()
 while True:
-  escolha = input('Digite a opção que prefere:\n 1-adicionar;\n 2-remover;\n 3-buscar;\n 4-mostrar;\n 5-sair;\n ')
-  if escolha == '1':
-      elemento = input('Qual item deseja adicionar? ')
-      Lista.inserir(elemento)
-  elif escolha == '2':
-      elemento = input('Que elemento deseja excluir? ')
-      Lista.remover(elemento)
-  elif escolha == '3':
-      elemento = input('Que elemento deseja buscar? ')
-      res = Lista.busca(elemento)
-      if res == True:
-          print('O elemento está na lista')
-      else:
-          print ('O elemento não foi encontrado')
-  elif escolha == '4':
-      Lista.mostrar()
-  elif escolha == '5':
-      break
-  else:
-      print('Opção inválida')
+
+    print('\nLISTA DE ITENS:\n Faça uma escolha:\n [1]Adicionar\n [2]Remover\n [3]Buscar elemento\n [4]Mostrar lista\n [5]Sair')
+    esc = int(input())
+    if esc == 1:
+        item = input('QUAL ITEM DESEJA ADICIONAR?\n')
+        main.inserir(item)
+    elif esc == 2:
+        item = input('QUAL ITEM DESEJA REMOVER?\n')
+        main.remover(item)
+    elif esc == 3:
+        item = input('QUAL ITEM DESEJA BUSCAR?\n')
+        res = main.busca(item)
+        if res == True:
+            print(f'O ITEM {item} ESTÁ NA LISTA.')
+        else:
+            print(f'O ITEM {item} NÂO ESTÁ NA LISTA.')
+    elif esc == 4:
+        print('LISTA:')
+        main.mostrar()
+    elif esc == 5:
+        print('ENCERRANDO O PROGRAMA...')
+        break
+    else: 
+        print('OPÇÃO INVÁLIDA.')
+        
