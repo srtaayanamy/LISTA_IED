@@ -1,4 +1,5 @@
-# Escreva uma função que receba duas listas e as intercale em uma única lista. Não utilize métodos prontos da linguagem e faça a intercalação elemento a elemento.
+# Intercalar Listas: 
+'''Escreva uma função que receba duas listas e as intercale em uma única lista. Não utilize métodos prontos da linguagem e faça a intercalação elemento a elemento.'''
 
 lista1 = []
 lista2 = []
@@ -27,9 +28,9 @@ def adicionar02 (item):
    print('Item adicionado á lista 2!')
 
 while True:
-    esc = input('Escolha a opção:\n 1-Adicionar item ás listas.\n 2-Intercalar listas.\n')
+    esc = input('Escolha a opção:\n [1]Adicionar item às listas.\n [2]Intercalar listas.\n [3]Sair\n')
     if esc == '1':
-       qlista = input('deseja adicionar itens á lista 1 ou 2?\n')
+       qlista = input('deseja adicionar itens à lista 1 ou 2?\n')
        if qlista == '1':
           item = input('Que item deseja adicionar?\n')
           lista1.append(item)
@@ -40,6 +41,10 @@ while True:
     elif esc == '2':
        lis_intercalada = intercalar(lista1, lista2)
        print(lis_intercalada)
-       break
 
-#oh my im so happy i just do it this amazing algoritimo uauu
+    elif esc == '3':
+       print('ENCERRANDO PROGRAMA...')
+       break
+       
+    else: 
+       print('OPÇÃO INVÁLIDA')
