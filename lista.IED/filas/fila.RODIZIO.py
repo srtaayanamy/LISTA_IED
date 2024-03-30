@@ -1,12 +1,15 @@
-# Dada uma fila inicial de pessoas, crie uma função que simule um número n de operações de "passar a pessoa da frente para o final da fila". Ao final, mostre a nova configuração da fila.
+# Rodízio de Pessoas: 
+'''Dada uma fila inicial de pessoas, crie uma função que simule um número n de operações de "passar a pessoa da frente para o final da fila". Ao final, mostre a nova configuração da fila.'''
 
 class Rodizio:
-
     def __init__(self):
         self.fila = []
-    def inserir(self, pessoa):
+
+    def enqueue (self, pessoa):
         self.fila.append(pessoa)
-    def mover(self, n):
+        print('PESSOA ADICIONADA À FILA.')
+
+    def mover (self, n):
         if self.fila:
             for pessoa in range(n):
                 temp = self.fila.pop(0)
@@ -14,27 +17,37 @@ class Rodizio:
             return self.fila
         else:
             return False
-
-fila = Rodizio()
+        
+    def mostrar(self):
+        print('\nFILA ATUAL:')
+        print(self.fila)
+        
+main = Rodizio()
 while True:
 
-    print('O que deseja fazer?\n1-Inserir pessoa;\n2-Passar pessoa para o final;\n3-Sair\n')
+    print('\nESCOLHA O QUE DESEJA FAZER:\n [1]Adicionar pessoas na fila\n [2]Mover a primeira pessoa da fila\n [3]Mostrar Lista\n [4]Sair')
     esc = int(input())
 
     if esc == 1:
-        pessoa = input('Digite a pessoa: ')
-        fila.inserir(pessoa)
-        print('O cliente foi adicionado na fila.')
+        pessoa = input('QUAL A PESSOA QUE DESEJA ADICIONAR? ')
+        main.enqueue(pessoa)
+
     elif esc == 2:
-        n = int(input('Quantas vezes?'))
-        retorno = fila.mover(n)
+        main.mostrar()
+        n = int(input('QUANTAS VEZES DESEJA MOVER A PESSOA? '))
+        print('\nFILA:')
+        retorno = main.mover(n)
         if retorno != False:
             print(retorno)
         else:
-            print('Não tem fila')  
-    elif esc == 3:
+            print('A FILA NÃO EXISTE.')
+
+    elif esc == 3: 
+        main.mostrar()
+
+    elif esc == 4:
+        print('ENCERRANDO PROGRAMA...')
         break
-    else: 
-        print('Essa opção não existe')
 
-
+    else:
+        print('OPÇÃO INVÁLIDA, por favor escolha entre as opções listadas.')
