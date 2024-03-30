@@ -1,17 +1,44 @@
-# Escreva uma função que receba uma lista e reverta a ordem de seus elementos, sem criar uma nova lista.
+# Reversão de Lista: 
+'''Escreva uma função que receba uma lista e reverta a ordem de seus elementos, sem criar uma nova lista.'''
 
-lista = []  
+class Lista:
+    def __init__(self):
+        self.list = []
+
+    def inserir(self, elemento):
+        self.list.append(elemento)
+
+    def remover(self, elemento):
+        if elemento in self.list:
+            self.list.remove(elemento)
+            print(f'ELEMENTO {elemento} REMOVIDO DA LISTA')
+
+        else:
+            print('ELEMENTO NÃO ENCONTRADO.')
+
+    def inverter(self):
+        self.list.reverse()
+        print(self.list)
+
+main = Lista()
 while True:
-    
-    print('1-Adicionar\n2-Reverter')   
-    esc = int(input('\nEscolha: '))    
+    esc = int(input('ESCOLHA:\n [1]Adicionar na lista\n [2]Remover da lista\n [3]Inverter\n [4]Sair\n'))
 
     if esc == 1:
-        item = input('\nDigite o item que você quer adicionar: ')
-        lista.append(item)
-        print(f'\Item adicionado. ')
+        elemento = input('QUAL ITEM DESEJA ADICIONAR?\n')
+        main.inserir(elemento)
+        print(f'ELEMENTO {elemento} ADICIONADO A LISTA')
 
     elif esc == 2:
-        lista.reverse()
-        print(lista)
+        elemento = input('QUAL ITEM DESEJA REMOVER?\n')
+        main.remover(elemento)
+
+    elif esc == 3:
+        main.inverter()
+
+    elif esc == 4:
+        print('ENCERRANDO O PROGRAMA...')
         break
+
+    else:
+        print('OPÇÃO INVÁLIDA')
