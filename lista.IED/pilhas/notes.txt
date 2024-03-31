@@ -1,1 +1,6 @@
+"último inserido é o primeiro a ser removido."
 
+# Push: Adiciona um elemento no topo da pilha;
+# Pop: Remove o elemento do topo da pilha;
+# Peek: Retorna o elemento do topo da pilha sem removê-lo;
+# isEmpty: Verifica se a pilha está vazia;
