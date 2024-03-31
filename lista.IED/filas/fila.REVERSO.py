@@ -41,6 +41,10 @@ while True:
 
     elif esc == 3:
         main.mostrar()
+
+    elif esc == 4:
+        print('ENCERRANDO PROGRAMA...')
+        break
     
     else:
         print('OPÇÃO INVÁLIDA, por favor escolha dentre as opções listadas.')
